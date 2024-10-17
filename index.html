@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/svg+xml" href="https://imgs.search.brave.com/8bgtIDCArtXmsopVieBaiAPBQGuFRon0AdhKdyea57s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxsLWZyZWUt/ZG93bmxvYWQuY29t/L2ltYWdlcy9ncmFw/aGljbGFyZ2UvbXVz/aWNfcGxheWVyX3Bp/Y3R1cmVfMTY4MjQz/LmpwZw" />
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="music-player-container">
+    <div class="music-player">
+        <div class="player-details">
+            <img id="cover" src="placeholder.jpg" alt="Album Cover">
+            <div class="info">
+                <h2 id="title">Song Title</h2>
+                <h3 id="artist">Artist Name</h3>
+            </div>
+        </div>
+
+        <audio id="audio" src="song1.mp3"></audio>
+
+        <div class="controls">
+            <button id="prev">⏮️</button>
+            <button id="play">▶️</button>
+            <button id="next">⏭️</button>
+        </div>
+
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <div class="time">
+            <span id="current-time">0:00</span>/<span id="duration">0:00</span>
+        </div>
+
+        <div class="volume-control">
+            <label for="volume">Volume: </label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+
+        <div class="playlist">
+            <ul id="playlist">
+                <li data-src="song1.mp3">Song 1 - Amitabh Bhattacharya, Sachin-Jigar, Madhubanti Bagchi, Divya Kumar</li>
+                <li data-src="song2.mp3">Song 2 - Akhil Sachdeva</li>
+                <li data-src="song3.mp3">Song 3 -Anuv Jain</li>
+                <li data-src="song3.mp3">Song 4 -Anuv Jain</li>
+                <li data-src="song3.mp3">Song 5 -Badshah, Payal Dev</li>
+                <li data-src="song3.mp3">Song 6 - Karan Aujla</li>
+                <li data-src="song3.mp3">Song 7 -  Michael David Rosenberg</li>
+                <li data-src="song3.mp3">Song 8 - Aditya Narayan</li>
+                <li data-src="song3.mp3">Song 9 - Juss</li>
+                <li data-src="song3.mp3">Song 10 -Siddhant Bhosle</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
